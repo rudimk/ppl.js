@@ -8,12 +8,42 @@ Until this doesn't make it to npm, please clone this locally, and include in you
 var ppl = require('./index.js')
 ```
 
-To get one random agent:
+1. To get one random agent:
 
 ```javascript
 var agent
 ppl.getAgent()
 .then(function(result){
     agent = result
+})
+```
+
+2. You can grab a random agent from a particular country:
+
+```javascript
+var agent
+ppl.getAgentByCountry()
+.then(function(result){
+    agent = result
+})
+```
+
+3. You can get a list of random agents:
+
+```javascript
+var agents
+ppl.getAgents()
+.then(function(result){
+    agents = result
+})
+```
+
+4. ...and you can get a list of random agents from a particular country:
+
+```javascript
+var agents
+ppl.getAgentsByCountry()
+.then(function(result){
+    agents = result
 })
 ```
