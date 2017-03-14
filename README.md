@@ -51,7 +51,7 @@ ppl.getAgentsByCountry('ru', 25)
 
 ## Issues
 1. Create an npm package.
-2. Create an ES7 version using async functions instead or promises.
+2. Create an ES7 version using async functions instead of promises.
 3. Refactor, use ES6 classes instead, with ES7 async functions as class methods.
 
 PRs are eagerly solicited.
