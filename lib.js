@@ -34,7 +34,19 @@ function getAgents(batch){
     })
 }
 
+//This function combines specifying a country as well as a batch.
+// To call: var a; ppl.getAgentsByCountry(country, batch).then(function(res){a = res})
+function getAgentsByCountry(code, batch){
+    return new Promise(function(resolve, reject){
+        got(`http://pplapi.com/batch/${batch}/country/${code}/sample.json`)
+        .then(function(response){
+            return resolve(JSON.parse(response.body))
+        })
+    })
+}
+
 // Export defined functions.
 exports.getAgent = getAgent
 exports.getAgentByCountry = getAgentByCountry
 exports.getAgents = getAgents
+exports.getAgentsByCountry = getAgentsByCountry
