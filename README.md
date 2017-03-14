@@ -22,7 +22,7 @@ ppl.getAgent()
 
 ```javascript
 var agent
-ppl.getAgentByCountry()
+ppl.getAgentByCountry('fr')
 .then(function(result){
     agent = result
 })
@@ -32,7 +32,8 @@ ppl.getAgentByCountry()
 
 ```javascript
 var agents
-ppl.getAgents()
+var n = 20
+ppl.getAgents(n)
 .then(function(result){
     agents = result
 })
@@ -42,7 +43,7 @@ ppl.getAgents()
 
 ```javascript
 var agents
-ppl.getAgentsByCountry()
+ppl.getAgentsByCountry('ru', 25)
 .then(function(result){
     agents = result
 })
