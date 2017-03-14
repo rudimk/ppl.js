@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rudimk/ppl.js/issues"
   },
-  "homepage": "https://github.com/rudimk/ppl.js#readme"
+  "homepage": "https://github.com/rudimk/ppl.js#readme",
+  "dependencies": {
+    "got": "^6.7.1"
+  }
 }
