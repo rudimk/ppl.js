@@ -48,3 +48,13 @@ ppl.getAgentsByCountry('ru', 25)
     agents = result
 })
 ```
+
+## Issues
+1. Create an npm package.
+2. Create an ES7 version using async functions instead or promises.
+3. Refactor, use ES6 classes instead, with ES7 async functions as class methods.
+
+PRs are eagerly solicited.
+
+## License
+[This](https://github.com/rudimk/ppl.js/blob/master/LICENSE).
