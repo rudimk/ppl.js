@@ -23,6 +23,18 @@ function getAgentByCountry(code){
     })
 }
 
+// This function accepts a batch size, and then grabs as many agents.
+// To call: var a; ppl.getAgents(n).then(function(res){a = res})
+function getAgents(batch){
+    return new Promise(function(resolve, reject){
+        got(`http://pplapi.com/batch/${batch}/sample.json`)
+        .then(function(response){
+            return resolve(JSON.parse(response.body))
+        })
+    })
+}
+
 // Export defined functions.
 exports.getAgent = getAgent
 exports.getAgentByCountry = getAgentByCountry
+exports.getAgents = getAgents
